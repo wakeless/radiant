@@ -28,18 +28,18 @@ a general purpose content managment system--not merely a blogging engine.}
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<rake>, [">= 0.8.3"])
-      s.add_runtime_dependency(%q<rack>, ["~> 1.1.0"])
+      s.add_runtime_dependency(%q<rack>, [">= 1.1.0"])
       s.add_runtime_dependency(%q<will_paginate>, ["~> 2.3.11"])
       s.add_runtime_dependency(%q<RedCloth>, [">= 4.0.0"])
     else
       s.add_dependency(%q<rake>, [">= 0.8.3"])
-      s.add_dependency(%q<rack>, ["~> 1.1.0"])
+      s.add_dependency(%q<rack>, ["> 1.1.0"])
       s.add_dependency(%q<will_paginate>, ["~> 2.3.11"])
       s.add_dependency(%q<RedCloth>, [">= 4.0.0"])
     end
   else
     s.add_dependency(%q<rake>, [">= 0.8.3"])
-    s.add_dependency(%q<rack>, ["~> 1.1.0"])
+    s.add_dependency(%q<rack>, [">= 1.1.0"])
     s.add_dependency(%q<will_paginate>, ["~> 2.3.11"])
     s.add_dependency(%q<RedCloth>, [">= 4.0.0"])
   end
